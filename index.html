@@ -1,16 +1,39 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <title>Parcel Sandbox</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./src/styles.css" />
+    <!-- <script type="module" src="./src/index.js"></script> -->
+  </head>
 
-<head>
-	<title>Parcel Sandbox</title>
-	<meta charset="UTF-8" />
-</head>
+  <body>
+    <script>
+      function play(index) {
+        var audio = document.getElementById("audio" + index);
+        audio.play();
+      }
+    </script>
 
-<body>
-	<div id="app"></div>
-
-	<script src="src/index.js">
-	</script>
-</body>
-
+    <a nohref value="PLAY" onmouseover="play(1)">Your Text 1</a>
+    <p></p>
+    <p></p>
+    <a nohref value="PLAY" onmouseover="play(2)">Your Text 2</a>
+    <p></p>
+    <p></p>
+    <a nohref value="PLAY" onmouseover="play(3)">Your Text 3</a>
+    <audio
+      id="audio1"
+      src="https://kolber.github.io/audiojs/demos/mp3/juicy.mp3"
+    ></audio>
+    <audio
+      id="audio2"
+      src="https://kolber.github.io/audiojs/demos/mp3/juicy.mp3"
+    ></audio>
+    <audio
+      id="audio3"
+      src="https://kolber.github.io/audiojs/demos/mp3/juicy.mp3"
+    ></audio>
+  </body>
 </html>
