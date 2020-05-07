@@ -4,7 +4,7 @@
     <title>Parcel Sandbox</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="./src/styles.css" />
+    <link rel="stylesheet" href="src/styles.css" />
     <!-- <script type="module" src="./src/index.js"></script> -->
   </head>
 
@@ -16,22 +16,27 @@
       }
     </script>
 
-    <a nohref value="PLAY" onmouseover="play(1)">Your Text 1</a>
+    <a nohref value="PLAY" onclick="play(1)"
+      >Lisez le texte bien et répondez aux questions suivantes.</a
+    >
     <p></p>
     <p></p>
-    <a nohref value="PLAY" onmouseover="play(2)">Your Text 2</a>
+    <a nohref value="PLAY" onclick="play(2)">Your Text 2</a>
     <p></p>
     <p></p>
-    <a nohref value="PLAY" onmouseover="play(3)">Your Text 3</a>
+    <a nohref value="PLAY" onclick="play(3)">Your Text 3</a>
     <audio
+      allow="autoplay"
       id="audio1"
-      src="https://kolber.github.io/audiojs/demos/mp3/juicy.mp3"
+      src="./audio/Lisez le texte bien et répondez aux questions suivantes.mp3"
     ></audio>
     <audio
+      allow="autoplay"
       id="audio2"
       src="https://kolber.github.io/audiojs/demos/mp3/juicy.mp3"
     ></audio>
     <audio
+      allow="autoplay"
       id="audio3"
       src="https://kolber.github.io/audiojs/demos/mp3/juicy.mp3"
     ></audio>
